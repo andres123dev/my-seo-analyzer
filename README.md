@@ -101,24 +101,24 @@ Instalar las dependencias desde requirements.txt:
 <b>My SEO analyzer</b> no necesita instalación</a>.    
 
 Show version:  
-<code> python my-seo-analizer -v </code>  
-<code> python my-seo-analizer --version </code>  
+<code> python my_seo_analyzer -v </code>  
+<code> python my_seo_analyzer --version </code>  
 
 Show help:  
-<code> python my-seo-analizer -h </code>  
-<code> python my-seo-analizer --help </code> 
+<code> python my_seo_analyzer -h </code>  
+<code> python my_seo_analyzer --help </code> 
   
 ## Uso  
 
 <b>My SEO analyzer</b> se ejecuta cómo cualquier otro script de Python 3.  
 
 HTTP request examples:  
-<code> python my-seo-analizer -url paginaweb.com </code>  
-<code> python my-seo-analizer -url http://paginaweb.com/ </code>  
+<code> python my_seo_analyzer -url paginaweb.com </code>  
+<code> python my_seo_analyzer -url http://paginaweb.com/ </code>  
 
 HTTPS request examples:  
-<code> python my-seo-analizer -url paginaweb.com -https </code>  
-<code> python my-seo-analizer -url https://paginaweb.com/ </code>  
+<code> python my_seo_analyzer -url paginaweb.com -https </code>  
+<code> python my_seo_analyzer -url https://paginaweb.com/ </code>  
   
 ## Compatibilidad  
 
@@ -137,8 +137,6 @@ Este script es multiplataforma.
 
 </div>
 
-
-<div id="readme-en">
 <hr>
 
 <div id="index-en">
@@ -153,6 +151,8 @@ Este script es multiplataforma.
 - Compatibility
 
 </div>
+
+<div id="readme-en">
 
 ## Description
 Is an interactive consol app writed with <a href="https://www.python.org/downloads/" target="_blank">Python 3</a>, to make a HTTP request to an URL, analyze SEO of the response HTML and generate a report in PDF format.  
@@ -177,7 +177,7 @@ Is an interactive consol app writed with <a href="https://www.python.org/downloa
 -> <a href="">ReportLab</a>  
 
 > Install the dependencies manually with Pip:  
-> <code>   pip install request, bs4, reportlab </code>  
+> <code> pip install request, bs4, reportlab </code>  
 
 > Or install all dependencies from requirements.txt:  
 > <code> pip install -r requirements.txt </code>  
