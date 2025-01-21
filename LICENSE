@@ -1,0 +1,9 @@
+Andres Fernandez Buron
+2022-2025
+
+Copyright (C) All rights reserved
+
+my-seo-analyzer
+Script to request a HTML document, analyze his SEO & generate a report in PDF format.
+
+Wrote with Python 3.
