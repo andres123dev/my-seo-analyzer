@@ -90,23 +90,23 @@
 -> <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>  
 -> <a href="" target="_blank">ReportLab</a>  
 
-> Instalar las dependencias manualmente con Pip:  
-> <code> pip install request, bs4, reportlab </code>  
+Instalar las dependencias manualmente con Pip:  
+<code> pip install request, bs4, reportlab </code>  
 
-> Instalar las dependencias desde requirements.txt:  
-> <code> pip install -r requiremnts.txt </code>
+Instalar las dependencias desde requirements.txt:  
+<code> pip install -r requiremnts.txt </code>
   
 ## Instalación  
 
 <b>My SEO analyzer</b> no necesita instalación</a>.    
 
-> Show version:  
-> <code> python my-seo-analizer -v </code>  
-> <code> python my-seo-analizer --version </code>  
+Show version:  
+<code> python my-seo-analizer -v </code>  
+<code> python my-seo-analizer --version </code>  
 
-> Show help:  
-> <code> python my-seo-analizer -h </code>  
-> <code> python my-seo-analizer --help </code> 
+Show help:  
+<code> python my-seo-analizer -h </code>  
+<code> python my-seo-analizer --help </code> 
   
 ## Uso  
 
@@ -185,13 +185,13 @@ Is an interactive consol app writed with <a href="https://www.python.org/downloa
 ## Installation
 <b>My SEO analyzer</b> doesn't need installation.  
 
-> Show version:  
-> <code> python my-seo-analizer -v </code>  
-> <code> python my-seo-analizer --version </code>
+Show version:  
+<code> python my-seo-analizer -v </code>  
+<code> python my-seo-analizer --version </code>
 
-> Show help:  
-> <code> python my-seo-analizer -h </code>  
-> <code> python my-seo-analizer --help </code>  
+Show help:  
+<code> python my-seo-analizer -h </code>  
+<code> python my-seo-analizer --help </code>  
 
 ## Usage examples
 
