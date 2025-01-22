@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ =        "Andrés Fernández Burón"
-__name__ =          "my_seo_report"
+__name__ =          "report"
 __description__ =   "Module to generate the SEO report"
-__copyright__ =     "Copyright 2022-2025, Andrés Fernández Burón"
+__author__ =        "Andrés Fernández Burón"
+__copyright__ =     "Copyright 2022-2025"
 __license__ =       "All rights reserved"
 __date__ =          "15-05-2022"
 __status__ =        "Development"
@@ -17,7 +17,3 @@ __all__ = [
     'template',
     'output'
 ]
-
-from .styles import *
-from .template import *
-from .output import *
