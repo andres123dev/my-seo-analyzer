@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ =        "Andrés Fernández Burón"
 __name__ =          "user_interface"
-__description__ =   "Functions to handle user interface using the console i/o."
-__copyright__ =     "Copyright 2022-2025, Andres Fernandez Buron"
-__license__ =       "Andres Fernandez Buron, All rights reserved"
+__description__ =   "Functions to handle user interface using the terminal i/o."
+__author__ =        "Andrés Fernández Burón"
+__copyright__ =     "Copyright 2022-2025"
+__license__ =       "All rights reserved"
 __date__ =          "15-05-2022"
 __status__ =        "Development"
 __version__ =       "0.1"
@@ -84,16 +84,6 @@ def ask_a_value( msg='Introduce un valor', detalle='' ):
     while( value==None or value=='' ):
         value = input('').lstrip().rstrip().strip()
     return value
-
-# ------------------------------------------------------------------------------
-# DEVUELVO INT CON LA OPCIÓN INTRODUCIDA POR EL USUARIO
-# ------------------------------------------------------------------------------
-def get_op_menu():
-    print(menu_options_text)
-    op = -2
-    while op<-1 or op>4:
-        op = ask_a_number('Selecciona una opcion')
-    return op
 
 # ------------------------------------------------------------------------------
 # LIMPIO LA CONSOLA
