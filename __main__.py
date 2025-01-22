@@ -4,7 +4,7 @@
 __author__ =        "Andrés Fernández Burón"
 __name__ =          "__main__"
 __description__ =   "The main script of the app."
-__description__ =   "Script to request a HTML document, analyze his SEO & generate a report."
+__description__ =   "Script to request a HTML document, analyze the SEO & generate a report."
 __copyright__ =     "Copyright 2022-2025, Andres Fernandez Buron"
 __license__ =       "Andres Fernandez Buron, All rights reserved"
 __date__ =          "15-05-2022"
@@ -16,14 +16,24 @@ __email__ =         "https://github.com/andres123dev/my-seo-analyzer/new/choose"
 #==============================================================================
 # SELF SUBMODULES
 #==============================================================================
-from utils.text import *
-from utils.user_interface import *
-from utils.filesys import *
 
-from extract.http_request import *
-from extract.seo_analysis import *
+#from my_seo_analyzer import *
 
-from report.output import *
+
+from my_seo_analyzer.utils import *
+from my_seo_analyzer.extract import *
+from my_seo_analyzer.report import *
+
+"""
+from my_seo_analyzer.utils.text import *
+from my_seo_analyzer.utils.user_interface import *
+from my_seo_analyzer.utils.filesys import *
+
+from my_seo_analyzer.extract.http_request import *
+from my_seo_analyzer.extract.seo_analysis import *
+
+from my_seo_analyzer.report.output import *
+"""
 
 #==============================================================================
 # VARS TO CONFIG THE APP
@@ -67,9 +77,9 @@ def handle_params():
         global URL
         URL = args.url
     else:
-        print_error(param_error_text)
-        print(param_help_text)
-        terminar()
+        user_interface.print_error(text.param_error_text)
+        print(text.param_help_text)
+        user_interface.terminar()
 
     # PARAM -HTTPS
     if args.force_https:
@@ -90,13 +100,13 @@ def main():
     global URL, force_https, force_js, output_path
 
     # LIMPIO LA CONSOLA Y MUESTRO LA CABECERA DE LA APLICACIÓN
-    print_start_header()
+    user_interface.print_start_header()
 
     # OBTENGO LOS PARÁMETROS RECIBIDOS
     handle_params()
 
     # DOY FORMATO LA URL
-    url = normalize_URL( URL, force_https )
+    url = http_request.normalize_URL( URL, force_https )
 
     print(f" Force HTTPS: {force_https}")
     print(f" Force JS:    {force_js}\n")
@@ -104,22 +114,22 @@ def main():
     print(f" REQUEST:     {url}\n")
 
     # REALIZO LA PETICIÓN HTTP
-    response = make_http_request( url, user_agent )
-    html_doc = handle_http_response( response )
+    response = http_request.make_http_request( url, user_agent )
+    html_doc = http_request.handle_http_response( response )
 
     # ANALIZO EL SEO DEL HTML
-    data_dict = analyze_document_seo( html_doc )
+    data_dict = seo_analysis.analyze_document_seo( html_doc )
     
-    print_header()
-    print_seo_verbose( data_dict )
+    user_agent.print_header()
+    seo_analysis.print_seo_verbose( data_dict )
 
-    output_path = get_dir_name_for_URL( output_path, url )
-    file_name = get_file_name_for_URL( url )
+    output_path = filesys.get_dir_name_for_URL( output_path, url )
+    file_name = filesys.get_file_name_for_URL( url )
 
-    create_dir_if_not_exists( output_path )
+    filesys.create_dir_if_not_exists( output_path )
 
-    output_path = get_full_path_for_URL( output_path, file_name )
-    generate_out_pdf( output_path, url, user_agent, response, data_dict )
+    output_path = filesys.get_full_path_for_URL( output_path, file_name )
+    output.generate_out_pdf( output_path, url, user_agent, response, data_dict )
     
     print(f"SEO report {file_name} exported to {output_path}")
     
