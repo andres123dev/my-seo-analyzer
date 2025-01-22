@@ -9,7 +9,7 @@
       </tr>
       <tr>
         <th>Description</th>
-		    <td>Script to make a HTTP request for a HTML webpage, analyze the SEO of the response & generate a report in PDF format.</td>
+		    <td>Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
       </tr>
       <tr>
         <th>Author</th>
@@ -59,7 +59,7 @@
 - Requisitos
 - Dependencias
 - Instalación
-- Uso
+- Ejemplos de uso
 - Compatibilidad
 
 </div>
@@ -86,39 +86,40 @@
 ## Dependencias
 <b>My SEO analyzer</b> depende de los siguientes módulos de Python 3:  
 
--> <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a>  
--> <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>  
--> <a href="" target="_blank">ReportLab</a>  
+- <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a>
+- <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>
+- <a href="https://lxml.de/index.html#documentation" target="_blank">lxml</a>
+- <a href="" target="_blank">ReportLab</a>  
 
 Instalar las dependencias manualmente con Pip:  
-<code> pip install request, bs4, reportlab </code>  
+<code> pip install request, lxml, bs4, reportlab </code>  
 
 Instalar las dependencias desde requirements.txt:  
-<code> pip install -r requiremnts.txt </code>
+<code> pip install -r requirements.txt </code>
   
 ## Instalación  
 
 <b>My SEO analyzer</b> no necesita instalación</a>.    
 
-Show version:  
+Mostrar versión:  
 <code> python my_seo_analyzer -v </code>  
 <code> python my_seo_analyzer --version </code>  
 
-Show help:  
+Mostrar ayuda::  
 <code> python my_seo_analyzer -h </code>  
 <code> python my_seo_analyzer --help </code> 
   
-## Uso  
+## Ejemplos de uso  
 
 <b>My SEO analyzer</b> se ejecuta cómo cualquier otro script de Python 3.  
 
-HTTP request examples:  
+Ejemplos de peticiones HTTP:  
 <code> python my_seo_analyzer -url paginaweb.com </code>  
-<code> python my_seo_analyzer -url http://paginaweb.com/ </code>  
+<code> python my_seo_analyzer -url <a>http://paginaweb.com/</a> </code>  
 
-HTTPS request examples:  
+Ejemplos de peticiones HTTPS:  
 <code> python my_seo_analyzer -url paginaweb.com -https </code>  
-<code> python my_seo_analyzer -url https://paginaweb.com/ </code>  
+<code> python my_seo_analyzer -url <a>https://paginaweb.com/</a> </code>  
   
 ## Compatibilidad  
 
@@ -155,7 +156,7 @@ Este script es multiplataforma.
 <div id="readme-en">
 
 ## Description
-Is an interactive consol app writed with <a href="https://www.python.org/downloads/" target="_blank">Python 3</a>, to make a HTTP request to an URL, analyze SEO of the response HTML and generate a report in PDF format.  
+Is an interactive consol app wrote with <a href="https://www.python.org/downloads/" target="_blank">Python 3</a>, to make a HTTP request to an URL, analyze SEO of the response HTML and generate a report in PDF format.  
 
 - The HTTP headers of the response
 - The meta tags
@@ -172,38 +173,39 @@ Is an interactive consol app writed with <a href="https://www.python.org/downloa
 
 <b>My SEO analyzer</b> depends on the following Python libraries:  
 
--> <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a>  
--> <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>  
--> <a href="">ReportLab</a>  
+- <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a>
+- <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>
+- <a href="https://lxml.de/index.html#documentation" target="_blank">lxml</a>
+- <a href="" target="_blank">ReportLab</a>  
 
-> Install the dependencies manually with Pip:  
-> <code> pip install request, bs4, reportlab </code>  
+Install the dependencies manually with Pip:  
+<code> pip install request, lxml, bs4, reportlab </code>  
 
-> Or install all dependencies from requirements.txt:  
-> <code> pip install -r requirements.txt </code>  
+Or install all dependencies from requirements.txt:  
+<code> pip install -r requirements.txt </code>  
   
 ## Installation
 <b>My SEO analyzer</b> doesn't need installation.  
 
 Show version:  
-<code> python my-seo-analizer -v </code>  
-<code> python my-seo-analizer --version </code>
+<code> python my_seo_analyzer -v </code>  
+<code> python my_seo_analyzer --version </code>
 
 Show help:  
-<code> python my-seo-analizer -h </code>  
-<code> python my-seo-analizer --help </code>  
+<code> python my_seo_analyzer -h </code>  
+<code> python my_seo_analyzer --help </code>  
 
-## Usage examples
+## Examples of use
 
 <b>My SEO analyzer</b> runs like any other Python 3 script.   
 
 HTTP request examples:  
-<code> python my-seo-analizer -url webpage.com </code>  
-<code> python my-seo-analizer -url http://webpage.com/ </code>  
+<code> python my_seo_analyzer -url webpage.com </code>  
+<code> python my_seo_analyzer -url <a>http://webpage.com/</a> </code>  
 
 HTTPS request examples:  
-<code> python my-seo-analizer -url webpage.com -https </code>  
-<code> python my-seo-analizer -url https://webpage.com/ </code>  
+<code> python my_seo_analyzer -url webpage.com -https </code>  
+<code> python my_seo_analyzer -url <a>https://webpage.com/</a> </code>  
   
 ## Compatibility
 
