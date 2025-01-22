@@ -5,11 +5,11 @@
     <tbody>
       <tr>
         <th>Proyect</th>
-        <td>my-seo-analyzer</td>
+        <td>My SEO analyzer</td>
       </tr>
       <tr>
         <th>Description</th>
-	<td>Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
+	<td>My SEO analyzer is a script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
       </tr>
       <tr>
         <th>Author</th>
@@ -28,7 +28,7 @@
 <pre>
           _____________________________________
          / ================================== /|
-        / ========= MY SEO analyzer ======== /||
+        / ========= My SEO analyzer ======== /||
        / ================================== /|||
       /                                    /||||
      /  Request to an URL for a HTML,     /|||||
@@ -102,24 +102,22 @@ Instalar las dependencias desde requirements.txt:
 <b>My SEO analyzer</b> no necesita instalación</a>.    
 
 Mostrar versión:  
-<code> python my_seo_analyzer -v </code>  
-<code> python my_seo_analyzer --version </code>  
+<code> python my-seo-analyzer -v </code>  
+<code> python my-seo-analyzer --version </code>  
 
 Mostrar ayuda::  
-<code> python my_seo_analyzer -h </code>  
-<code> python my_seo_analyzer --help </code> 
+<code> python my-seo-analyzer -h </code>  
+<code> python my-seo-analyzer --help </code> 
   
 ## Ejemplos de uso  
 
 <b>My SEO analyzer</b> se ejecuta cómo cualquier otro script de Python 3.  
 
 Ejemplos de peticiones HTTP:  
-<code> python my_seo_analyzer -url paginaweb.com </code>  
-<code> python my_seo_analyzer -url <aa href="">http://paginaweb.com/</a> </code>  
+<code> python my-seo-analyzer -url paginaweb.com </code>  
 
 Ejemplos de peticiones HTTPS:  
-<code> python my_seo_analyzer -url paginaweb.com -https </code>  
-<code> python my_seo_analyzer -url <aa href="">https://paginaweb.com/</a> </code>  
+<code> python my-seo-analyzer -url paginaweb.com -https </code>  
   
 ## Compatibilidad  
 
@@ -188,24 +186,22 @@ Or install all dependencies from requirements.txt:
 <b>My SEO analyzer</b> doesn't need installation.  
 
 Show version:  
-<code> python my_seo_analyzer -v </code>  
-<code> python my_seo_analyzer --version </code>
+<code> python my-seo-analyzer -v </code>  
+<code> python my-seo-analyzer --version </code>
 
 Show help:  
-<code> python my_seo_analyzer -h </code>  
-<code> python my_seo_analyzer --help </code>  
+<code> python my-seo-analyzer -h </code>  
+<code> python my-seo-analyzer --help </code>  
 
 ## Examples of use
 
 <b>My SEO analyzer</b> runs like any other Python 3 script.   
 
 HTTP request examples:  
-<code> python my_seo_analyzer -url webpage.com </code>  
-<code> python my_seo_analyzer -url <a href="">http://webpage.com/</a> </code>  
+<code> python my-seo-analyzer -url webpage.com </code>  
 
 HTTPS request examples:  
-<code> python my_seo_analyzer -url webpage.com -https </code>  
-<code> python my_seo_analyzer -url <a href="">https://webpage.com/</a> </code>  
+<code> python my-seo-analyzer -url webpage.com -https </code>   
   
 ## Compatibility
 
