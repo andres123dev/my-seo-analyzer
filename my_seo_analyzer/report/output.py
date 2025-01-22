@@ -285,39 +285,39 @@ class MySeoAnalysisTemplate( MyDocTemplate ):
         self.elements.append( PageBreak() )
     
     # SECTION 7 - LINKS
-    def add_links_section( self, anchors ):
+    def add_links_section( self, url, anchors ):
         self.add_heading('7. Document links', heading1_style, level=0)
         self.elements.append( Spacer(1, cm) )
 
         links = [a for a in anchors if a.text.replace(' ', '')!='' and a.get('href')!='#' and a.get('href')!='javascript:void(0)']
-        internal_links = [a for a in links if a.get('href').startswith('/') ]
-        external_links = [a for a in links if not a.get('href').startswith('/') ]
+
+        dominio = url.replace('https://', '').replace('http://', '').split('/')[0]
+        internal_links = [a for a in links if a.get('href').startswith(url[:round(len(url))]) or a.get('href').startswith(dominio) or a.get('href').startswith('/') ]
+        external_links = [a for a in links if not a.get('href').startswith(url[:round(len(url))]) and not a.get('href').startswith(dominio) and not a.get('href').startswith('/') ]
     
         self.add_paragraph(f"The document has <b>{len(anchors)}</b> <b>anchors</b>.")
         self.add_paragraph(f"From these anchors, <b>{len(links)}</b> are <b>links</b>.")
         self.elements.append( Spacer(1, cm) )
         self.add_paragraph(f"Of them, {len(internal_links)} are <b>internal links</b>.")
         self.add_paragraph(f"And {len(external_links)} are <b>external links</b>.")
-
-        """
         self.elements.append( Spacer(1, cm) )
         
+        """
         # Internal links
-        self.add_heading('7.1. Internal Links', tocheading2_style, level=1)
-
+        self.add_heading('7.1. Internal Links', heading2_style, level=1)
         for a in internal_links:
             self.add_paragraph(f"{a.text}")
             self.add_paragraph(f"{a.get('href')}", anchor_style)
 
         # External links
-        self.add_heading('7.2. External Links', tocheading2_style, level=1)
+        self.add_heading('7.2. External Links', heading2_style, level=1)
         for a in external_links:
             self.add_paragraph(f"{a.text}")
             self.add_paragraph(f"{a.get('href')}", anchor_style)
-        """
 
         self.elements.append( Spacer(1, 2*cm) )
         self.elements.append( PageBreak() )
+        """
 
     """
     def add_resume_section( self, data_dict ):
@@ -401,7 +401,7 @@ class MySeoAnalysisTemplate( MyDocTemplate ):
         # ---- Headers related to the connection & the server ----
         self.add_heading('1.3. Connection headers', heading2_style, level=1)
         data = []
-        searched = ['server', 'connection', 'status']
+        searched = ['server', 'connection', 'keep-alive', 'status']
         for key in response.headers.keys():
             if key.lower() in searched:
                 data.append( [key, Paragraph(response.headers[key], table_text_style)] )
@@ -532,7 +532,7 @@ def generate_out_pdf( filename, url, hua, response, data_dict ):
     # 6 - Referenced files
     doc.add_referenced_section( data_dict['css_links'], data_dict['onpage_css'], data_dict['script_links'], data_dict['onpage_scripts'] )
 
-    doc.add_links_section( data_dict['anchors'] )   # 7 - Links
+    doc.add_links_section( url, data_dict['anchors'] )   # 7 - Links
 
     
     # Build PDF document
