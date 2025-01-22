@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 __author__ =        "Andrés Fernández Burón"
-__name__ =          "output_doc"
+__name__ =          "output"
 __description__ =   "Class to generate the SEO report document."
-__copyright__ =     "Copyright 2022-2025, Andres Fernandez Buron"
-__license__ =       "Andres Fernandez Buron, All rights reserved"
+__copyright__ =     "Copyright 2022-2025"
+__license__ =       "All rights reserved"
 __date__ =          "15-05-2022"
 __status__ =        "Development"
 __version__ =       "0.1"
@@ -537,4 +537,3 @@ def generate_out_pdf( filename, url, hua, response, data_dict ):
     
     # Build PDF document
     doc.multiBuild( doc.elements, onFirstPage=doc.draw_header_footer, onLaterPages=doc.draw_header_footer )
-
