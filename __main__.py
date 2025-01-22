@@ -16,24 +16,11 @@ __email__ =         "https://github.com/andres123dev/my-seo-analyzer/new/choose"
 #==============================================================================
 # SELF SUBMODULES
 #==============================================================================
-
 #from my_seo_analyzer import *
-
 
 from my_seo_analyzer.utils import *
 from my_seo_analyzer.extract import *
 from my_seo_analyzer.report import *
-
-"""
-from my_seo_analyzer.utils.text import *
-from my_seo_analyzer.utils.user_interface import *
-from my_seo_analyzer.utils.filesys import *
-
-from my_seo_analyzer.extract.http_request import *
-from my_seo_analyzer.extract.seo_analysis import *
-
-from my_seo_analyzer.report.output import *
-"""
 
 #==============================================================================
 # VARS TO CONFIG THE APP
