@@ -3,9 +3,12 @@ Andres Fernandez Buron
 
 Copyright (C) All rights reserved
 
-my-seo-analyzer
 My SEO analyzer
-
-Script to request a HTML document, analyze his SEO & generate a report in PDF format.
+my-seo-analyzer
+Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.
 
 Wrote with Python 3.
+
+Disclaimer:
+- No guarantees are offered
+- No responsabilities taken
