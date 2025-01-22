@@ -9,7 +9,7 @@
       </tr>
       <tr>
         <th>Description</th>
-		    <td>Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
+	<td>Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
       </tr>
       <tr>
         <th>Author</th>
@@ -115,11 +115,11 @@ Mostrar ayuda::
 
 Ejemplos de peticiones HTTP:  
 <code> python my_seo_analyzer -url paginaweb.com </code>  
-<code> python my_seo_analyzer -url <a>http://paginaweb.com/</a> </code>  
+<code> python my_seo_analyzer -url <aa href="">http://paginaweb.com/</a> </code>  
 
 Ejemplos de peticiones HTTPS:  
 <code> python my_seo_analyzer -url paginaweb.com -https </code>  
-<code> python my_seo_analyzer -url <a>https://paginaweb.com/</a> </code>  
+<code> python my_seo_analyzer -url <aa href="">https://paginaweb.com/</a> </code>  
   
 ## Compatibilidad  
 
@@ -201,11 +201,11 @@ Show help:
 
 HTTP request examples:  
 <code> python my_seo_analyzer -url webpage.com </code>  
-<code> python my_seo_analyzer -url <a>http://webpage.com/</a> </code>  
+<code> python my_seo_analyzer -url <a href="">http://webpage.com/</a> </code>  
 
 HTTPS request examples:  
 <code> python my_seo_analyzer -url webpage.com -https </code>  
-<code> python my_seo_analyzer -url <a>https://webpage.com/</a> </code>  
+<code> python my_seo_analyzer -url <a href="">https://webpage.com/</a> </code>  
   
 ## Compatibility
 
