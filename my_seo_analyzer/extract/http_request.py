@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-__author__ =        "Andrés Fernández Burón"
 __name__ =          "http_request"
 __description__ =   "Functions to handle HTTP requests and responses."
-__copyright__ =     "Copyright 2022-2025, Andres Fernandez Buron"
-__license__ =       "Andres Fernandez Buron, All rights reserved"
+__author__ =        "Andrés Fernández Burón"
+__copyright__ =     "Copyright 2022-2025n"
+__license__ =       "All rights reserved"
 __date__ =          "15-05-2022"
 __status__ =        "Development"
 __version__ =       "0.1"
@@ -33,8 +33,8 @@ def normalize_URL( URL, force_https ):
 # ------------------------------------------------------------------------------
 # HAGO UNA PETICIÓN A LA URL Y DEVUELVO LA RESPUESTA O TERMINO
 # ------------------------------------------------------------------------------
-from utils.text import request_error_text
-from utils.user_interface import print_error, terminar
+from my_seo_analyzer.utils.text import request_error_text
+from my_seo_analyzer.utils.user_interface import print_error, terminar
 
 import requests
 
@@ -54,7 +54,7 @@ def make_http_request( URL, user_agent ):
 # HANDLE THE RESPONSE OF THE REQUEST
 # ------------------------------------------------------------------------------
 
-from utils.text import not_html_error_text
+from my_seo_analyzer.utils.text import not_html_error_text
 
 def handle_http_response( response ):
 
