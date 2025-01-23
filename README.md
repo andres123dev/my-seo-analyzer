@@ -3,32 +3,27 @@
 <div align="center">
   <table border="0" cellpadding="0" cellspacing="0">
     <tbody>
-      <tr>
-        <th>Proyect</th>
-        <td>My SEO analyzer</td>
-      </tr>
+      <tr> <th>Proyect</th> <td>My SEO analyzer</td>  </tr>
       <tr>
         <th>Description</th>
-	<td>My SEO analyzer is a script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
+	      <td>Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
       </tr>
-      <tr>
-        <th>Author</th>
-        <td>Andrés Fernández Burón</td>
-      </tr>
-      <tr>
-        <th>Copyright</th>
-        <td>2023-2025 &copy; All rights reserved</td>
-      </tr>
+      <tr> <th>Author</th> <td>Andrés Fernández Burón</td> </tr>
+      <tr> <th>Copyright</th> <td>2023-2025 &copy; All rights reserved</td> </tr>
     </tbody>
   </table>
 </div>
 
-<div>
+<div align="right">
+	<b>Language:</b> <a href="#index-es">Español</a> | <a href="#index-en">English</a>
+</div>
+
 <hr>
+
 <pre>
           _____________________________________
          / ================================== /|
-        / ========= My SEO analyzer ======== /||
+        / ========= MY SEO analyzer ======== /||
        / ================================== /|||
       /                                    /||||
      /  Request to an URL for a HTML,     /|||||
@@ -42,86 +37,100 @@
  | All rights reserved                 |//
  |_____________________________________|/
 </pre>
-<hr>
-</div>
-
-<div id="index" align="right">
-	<b>Language:</b> <a href="#index-es">Español</a> | <a href="#index-en">English</a>
-</div>
 
 <hr>
 
 <div id="index-es">
 
-## Índice
+## Índice  
 
-- Descripción
-- Requisitos
-- Dependencias
-- Instalación
-- Ejemplos de uso
-- Compatibilidad
+1. [Descripcion](#descripcion)  
+2. [Requisitos](#requisitos)  
+3. [Dependencias](#dependencias)  
+4. [Descarga](#descarga)  
+5. [Instalacion](#instalacion)  
+6. [Ejemplos de uso](#ejemplos-de-uso)  
+7. [Compatibilidad](#compatibilidad)  
 
 </div>
 
 <div id="readme-es">  
 
-## Descripción
-<b>My SEO analyzer</b> es un script escrito con <a href="https://www.python.org/doc/" target="_blank">Python 3</a>.
+## Descripcion
 
-<b>My SEO analyzer</b> sirve para realizar una petición HTTP a una URL, analizar el SEO del documento HTML y generar un reporte en formato PDF.
+<b>My SEO analyzer</b> permite realizar una petición a un documento HTML, analizar el SEO de la respuesta HTTP y generar un reporte en formato PDF.  
 
-<b>My SEO analyzer</b> analiza la respuesta HTTP y el documento HTML.
+Analiza la respuesta HTTP y el documento HTML.  
 
-- Las cabeceras HTTP de la respuesta
-- Las meta etiquetas
-- Los títulos
-- El DOM del documento HTML
-- El texto
-- Los links
+- Las cabeceras HTTP de la respuesta  
+- Las meta etiquetas  
+- Los títulos  
+- El DOM del documento HTML  
+- El texto  
+- Los links  
   
 ## Requisitos
-<b>My SEO analyzer</b> requiere tener instalado el lenguaje <a href="https://www.python.org/downloads/" target="_blank">Python 3</a> y <a href="" target="_blank">Pip</a>.
-  
+
+<b>My SEO analyzer</b> está escrito con [Python](https://www.python.org/doc/), y requiere tener instalado el lenguaje [Python 3](https://www.python.org/downloads/) y [Pip]().
+
 ## Dependencias
-<b>My SEO analyzer</b> depende de los siguientes módulos de Python 3:  
+<b>My SEO analyzer</b> depende de los siguientes módulos Python de terceros:  
 
-- <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a>
-- <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>
-- <a href="https://lxml.de/index.html#documentation" target="_blank">lxml</a>
-- <a href="" target="_blank">ReportLab</a>  
+- [Requests](https://requests.readthedocs.io/en/latest/)  
+- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)  
+- [lxml](https://lxml.de/index.html#documentation)  
+- [ReportLab]()  
 
-Instalar las dependencias manualmente con Pip:  
-<code> pip install request, lxml, bs4, reportlab </code>  
+ Si no sabes instalar las dependencias, consulta este [manual](../apuntes-andres/python/pip.md#instalar-módulos-desde-requirementstxt).  
 
-Instalar las dependencias desde requirements.txt:  
-<code> pip install -r requirements.txt </code>
+
+## Descarga
+
+Puedes descargar <b>My SEO analyzer</b> mediante una aplicación cliente cómo ````GitBash````. 
+
+También puedes descargarlo cómo fichero ZIP  [my-seo-analyzer-main.zip](https://github.com/andres123dev/my-seo-analyzer/archive/refs/heads/main.zip)
+
+> Si tienes alguna duda, consulta este [manual](../apuntes-andres/github/descargar-repositorio.md).  
   
-## Instalación  
+## Instalacion  
 
-<b>My SEO analyzer</b> no necesita instalación</a>.    
+<b>My SEO analyzer</b> no necesita instalación y se ejecuta igual que cualquier otro script de Python.  
 
+> Para ejecutar el script abre una terminal   
+> y pásale al intérprete de Python,  
+> la ruta al fichero ```__main__.py```  
+> que se encuentra en la raíz del repositorio.  
+
+1 - Me ubico en el directorio que contiene el repositorio:  
+```cd ~\Downloads\my-seo-analyzer-main```  
+
+2- Si es necesario, renombro el directorio del repositorio:  
+```mv my-seo-analyzer-main my-seo-analyzer```  
+
+3- Ejecuto el script  
+```python my-seo-analyzer```  
+
+## Ejemplos de uso   
+  
 Mostrar versión:  
-<code> python my-seo-analyzer -v </code>  
-<code> python my-seo-analyzer --version </code>  
+<code> py my-seo-analyzer -v </code>  
+<code> py my-seo-analyzer --version </code>  
 
-Mostrar ayuda::  
-<code> python my-seo-analyzer -h </code>  
-<code> python my-seo-analyzer --help </code> 
-  
-## Ejemplos de uso  
+Mostrar ayuda:  
+<code> py my-seo-analyzer -h </code>  
+<code> py my-seo-analyzer --help </code> 
 
-<b>My SEO analyzer</b> se ejecuta cómo cualquier otro script de Python 3.  
+Ejemplo de petición HTTP:  
+```py my-seo-analyzer -url paginaweb.com```  
+```py my-seo-analyzer -url http://paginaweb.com```  
 
-Ejemplos de peticiones HTTP:  
-<code> python my-seo-analyzer -url paginaweb.com </code>  
-
-Ejemplos de peticiones HTTPS:  
-<code> python my-seo-analyzer -url paginaweb.com -https </code>  
+Ejemplo de petición HTTPS:  
+```py my-seo-analyzer -url paginaweb.com -https```  
+```py my-seo-analyzer -url https://paginaweb.com```  
   
 ## Compatibilidad  
 
-Este script es multiplataforma.
+<b>My SEO analyzer</b> es un script multiplataforma.
 
 <div align="center">
 
@@ -142,19 +151,19 @@ Este script es multiplataforma.
 
 ## Index
 
-- Description
-- Requirements
-- Dependencies
-- Installation
-- Use
-- Compatibility
+1. [Description](#description)
+2. [Requirements](#requirements)
+3. [Dependencies](#dependencies)
+5. [Installation](#installation)
+6. [Examples of use](#examples-of-use)
+7. [Compatibility](#compatibility)
 
 </div>
 
 <div id="readme-en">
 
 ## Description
-Is an interactive consol app wrote with <a href="https://www.python.org/downloads/" target="_blank">Python 3</a>, to make a HTTP request to an URL, analyze SEO of the response HTML and generate a report in PDF format.  
+Is an interactive terminal app wich allows to make a request to a HTML, analyze SEO of the HTTP response and generate a report in PDF format.  
 
 - The HTTP headers of the response
 - The meta tags
@@ -165,43 +174,55 @@ Is an interactive consol app wrote with <a href="https://www.python.org/download
   
 ## Requirements
 
-<b>My SEO analyzer</b> require to have intalled <a href="https://www.python.org/downloads/" target="_blank">Python 3</a> language and <a href="">Pip</a>.
+<b>My SEO analyzer</b> is wrote with [Python 3](https://www.python.org/downloads/), so requires to have intalled [Python 3](https://www.python.org/downloads/) language and [Pip]().
   
 ## Dependencies
 
-<b>My SEO analyzer</b> depends on the following Python libraries:  
+<b>My SEO analyzer</b> depends on the following Python thirth party libraries:  
 
-- <a href="https://requests.readthedocs.io/en/latest/" target="_blank">Requests</a>
-- <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup4</a>
-- <a href="https://lxml.de/index.html#documentation" target="_blank">lxml</a>
-- <a href="" target="_blank">ReportLab</a>  
+- [Requests](https://requests.readthedocs.io/en/latest/)
+- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+- [lxml](https://lxml.de/index.html#documentation)
+- [ReportLab]()
 
-Install the dependencies manually with Pip:  
-<code> pip install request, lxml, bs4, reportlab </code>  
-
-Or install all dependencies from requirements.txt:  
-<code> pip install -r requirements.txt </code>  
+> Install with Pip all the dependencies from requirements.txt  
+````pip install -r requirements.txt````  
   
 ## Installation
 <b>My SEO analyzer</b> doesn't need installation.  
 
-Show version:  
-<code> python my-seo-analyzer -v </code>  
-<code> python my-seo-analyzer --version </code>
+> To run the script, open a terminal 
+> and give to the Python interpreter,  
+> the path to the ```__main__.py``` file.   
 
-Show help:  
-<code> python my-seo-analyzer -h </code>  
-<code> python my-seo-analyzer --help </code>  
+1 - Go to the repository directory:  
+```cd ~\Downloads\my-seo-analyzer-main```  
+
+If is neccesary, rename the directory of the repository:  
+```mv my-seo-analyzer-main my-seo-analyzer```  
+
+3- Run el script  
+```python my-seo-analyzer```  
 
 ## Examples of use
 
 <b>My SEO analyzer</b> runs like any other Python 3 script.   
 
-HTTP request examples:  
-<code> python my-seo-analyzer -url webpage.com </code>  
+<b>Show version:</b>  
+````python my-seo-analyzer -v````  
+or  
+````python my-seo-analyzer --version````  
 
-HTTPS request examples:  
-<code> python my-seo-analyzer -url webpage.com -https </code>   
+<b>Show help:</b>  
+````python my-seo-analyzer -h````  
+or  
+````python my-seo-analyzer --help````  
+
+<b>HTTP request example:</b>  
+````python my-seo-analyzer -url webpage.com````  
+
+<b>HTTPS request example:</b>  
+````python my-seo-analyzer -url webpage.com -https````  
   
 ## Compatibility
 
