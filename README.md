@@ -6,7 +6,7 @@
       <tr> <th>Proyect</th> <td>My SEO analyzer</td>  </tr>
       <tr>
         <th>Description</th>
-	      <td>Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
+	<td>Script to request a HTML webpage, analyze the SEO of the response and generate a report in PDF format.</td>
       </tr>
       <tr> <th>Author</th> <td>Andrés Fernández Burón</td> </tr>
       <tr> <th>Copyright</th> <td>2023-2025 &copy; All rights reserved</td> </tr>
@@ -14,8 +14,9 @@
   </table>
 </div>
 
-<div align="right">
-	<b>Language:</b> <a href="#index-es">Español</a> | <a href="#index-en">English</a>
+<div id="index" align="right">  
+
+**Language:** [Español](#index-es)   |   [English](#index-en)  
 </div>
 
 <hr>
@@ -44,13 +45,14 @@
 
 ## Índice  
 
-1. [Descripcion](#descripcion)  
-2. [Requisitos](#requisitos)  
-3. [Dependencias](#dependencias)  
-4. [Descarga](#descarga)  
-5. [Instalacion](#instalacion)  
-6. [Ejemplos de uso](#ejemplos-de-uso)  
-7. [Compatibilidad](#compatibilidad)  
+  - [Índice](#índice)
+  - [Descripcion](#descripcion)
+  - [Requisitos](#requisitos)
+  - [Dependencias](#dependencias)
+  - [Descarga](#descarga)
+  - [Instalacion](#instalacion)
+  - [Ejemplos de uso](#ejemplos-de-uso)
+  - [Compatibilidad](#compatibilidad)
 
 </div>
 
@@ -81,8 +83,7 @@ Analiza la respuesta HTTP y el documento HTML.
 - [lxml](https://lxml.de/index.html#documentation)  
 - [ReportLab]()  
 
- Si no sabes instalar las dependencias, consulta este [manual](../apuntes-andres/python/pip.md#instalar-módulos-desde-requirementstxt).  
-
+ Si no sabes instalar las dependencias, consulta este [manual](https://github.com/andres123dev/Apuntes-AndresFB/blob/main/python/pip.md#instalar-modulos-desde-requirementstxt).  
 
 ## Descarga
 
@@ -90,8 +91,8 @@ Puedes descargar <b>My SEO analyzer</b> mediante una aplicación cliente cómo `
 
 También puedes descargarlo cómo fichero ZIP  [my-seo-analyzer-main.zip](https://github.com/andres123dev/my-seo-analyzer/archive/refs/heads/main.zip)
 
-> Si tienes alguna duda, consulta este [manual](../apuntes-andres/github/descargar-repositorio.md).  
-  
+> Si tienes alguna duda, consulta este [manual](https://github.com/andres123dev/Apuntes-AndresFB/blob/main/github/descargar-repositorio.md).  
+
 ## Instalacion  
 
 <b>My SEO analyzer</b> no necesita instalación y se ejecuta igual que cualquier otro script de Python.  
@@ -104,7 +105,7 @@ También puedes descargarlo cómo fichero ZIP  [my-seo-analyzer-main.zip](https:
 1 - Me ubico en el directorio que contiene el repositorio:  
 ```cd ~\Downloads\my-seo-analyzer-main```  
 
-2- Si es necesario, renombro el directorio del repositorio:  
+2- <b>Si es necesario</b>, renombro el directorio del repositorio:  
 ```mv my-seo-analyzer-main my-seo-analyzer```  
 
 3- Ejecuto el script  
@@ -113,12 +114,12 @@ También puedes descargarlo cómo fichero ZIP  [my-seo-analyzer-main.zip](https:
 ## Ejemplos de uso   
   
 Mostrar versión:  
-<code> py my-seo-analyzer -v </code>  
-<code> py my-seo-analyzer --version </code>  
+```py my-seo-analyzer -v```  
+```py my-seo-analyzer --version```   
 
 Mostrar ayuda:  
-<code> py my-seo-analyzer -h </code>  
-<code> py my-seo-analyzer --help </code> 
+```py my-seo-analyzer -h```   
+```py my-seo-analyzer --help``` 
 
 Ejemplo de petición HTTP:  
 ```py my-seo-analyzer -url paginaweb.com```  
@@ -151,12 +152,17 @@ Ejemplo de petición HTTPS:
 
 ## Index
 
-1. [Description](#description)
-2. [Requirements](#requirements)
-3. [Dependencies](#dependencies)
-5. [Installation](#installation)
-6. [Examples of use](#examples-of-use)
-7. [Compatibility](#compatibility)
+  - [Index](#index)
+  - [Description](#description)
+  - [Requirements](#requirements)
+  - [Dependencies](#dependencies)
+  - [Installation](#installation)
+  - [Examples of use](#examples-of-use)
+      - [Show version:](#show-version)
+      - [Show help:](#show-help)
+      - [HTTP request example:](#http-request-example)
+      - [HTTPS request example:](#https-request-example)
+  - [Compatibility](#compatibility)
 
 </div>
 
@@ -174,11 +180,11 @@ Is an interactive terminal app wich allows to make a request to a HTML, analyze 
   
 ## Requirements
 
-<b>My SEO analyzer</b> is wrote with [Python 3](https://www.python.org/downloads/), so requires to have intalled [Python 3](https://www.python.org/downloads/) language and [Pip]().
+<b>My SEO analyzer</b> is wrote with [Python 3](https://www.python.org/downloads/), so requires to have installed [Python 3](https://www.python.org/downloads/) language and [Pip]().
   
 ## Dependencies
 
-<b>My SEO analyzer</b> depends on the following Python thirth party libraries:  
+<b>My SEO analyzer</b> depends on the following Python third-party libraries:  
 
 - [Requests](https://requests.readthedocs.io/en/latest/)
 - [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
@@ -191,8 +197,8 @@ Is an interactive terminal app wich allows to make a request to a HTML, analyze 
 ## Installation
 <b>My SEO analyzer</b> doesn't need installation.  
 
-> To run the script, open a terminal 
-> and give to the Python interpreter,  
+> To run <b>My SEO analyzer</b>, open a terminal  
+> and give to the Python interpreter,   
 > the path to the ```__main__.py``` file.   
 
 1 - Go to the repository directory:  
@@ -201,27 +207,25 @@ Is an interactive terminal app wich allows to make a request to a HTML, analyze 
 If is neccesary, rename the directory of the repository:  
 ```mv my-seo-analyzer-main my-seo-analyzer```  
 
-3- Run el script  
+3- Run the script  
 ```python my-seo-analyzer```  
 
 ## Examples of use
 
 <b>My SEO analyzer</b> runs like any other Python 3 script.   
 
-<b>Show version:</b>  
+#### Show version:
 ````python my-seo-analyzer -v````  
-or  
 ````python my-seo-analyzer --version````  
 
-<b>Show help:</b>  
+#### Show help:
 ````python my-seo-analyzer -h````  
-or  
 ````python my-seo-analyzer --help````  
 
-<b>HTTP request example:</b>  
+#### HTTP request example:
 ````python my-seo-analyzer -url webpage.com````  
 
-<b>HTTPS request example:</b>  
+#### HTTPS request example:
 ````python my-seo-analyzer -url webpage.com -https````  
   
 ## Compatibility
